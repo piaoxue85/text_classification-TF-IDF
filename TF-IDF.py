@@ -63,7 +63,7 @@ if __name__ == '__main__':
     # 语料库路径
     data_dir = r'C:\Users\Administrator\Desktop\base_model\stock_words\summary'
     # 分词后语料库路径
-    cut_dir = r'E:\PychormProjects\generate\stock_words\train_data'
+    cut_dir = 'train_data'
     if not os.path.exists(cut_dir):
         os.mkdir(cut_dir)
     # 调用分词模块 import cut_model.py
@@ -73,9 +73,9 @@ if __name__ == '__main__':
 
     # 模型保存路径
     #tdm_dir:训练数据。
-    tdm_dir = r'E:\PychormProjects\generate\stock_words\summary_tdm.dat'
+    tdm_dir = 'summary_tdm.dat'
     # vocabulary_dir：向量空间模型
-    vocabulary_dir = r'E:\PychormProjects\generate\stock_words\summary_vocabulary.dat'
+    vocabulary_dir = 'summary_vocabulary.dat'
 
     print '------generate vector space------'
     vector_space(cut_dir, tdm_dir, vocabulary_dir)
