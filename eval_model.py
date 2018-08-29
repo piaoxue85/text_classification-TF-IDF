@@ -81,13 +81,13 @@ def predict_label(predict_path, train_path, tdm_path, voca_path):
 
 if __name__ == '__main__':
     # 语料库路径
-    predict_data_dir = r'E:\PychormProjects\generate\stock_words\test_data'
+    predict_data_dir = 'test_data'
     # 分词后预料库路径
-    train_cut_dir = r'E:\PychormProjects\generate\stock_words\summary_cut_model'
+    train_cut_dir = r'train_data'
 
     # 加载向量空间模型
-    tdm_dir = r'E:\PychormProjects\generate\stock_words\summary_tdm.dat'
-    vocabulary_dit = r'E:\PychormProjects\generate\stock_words\summary_vocabulary.dat'
+    tdm_dir = 'summary_tdm.dat'
+    vocabulary_dit = 'summary_vocabulary.dat'
     # 输出标签
     label_out_path = r'C:\Users\Administrator\Desktop\base_model\predict_labels.txt'
     # 停用词路径
@@ -102,9 +102,4 @@ if __name__ == '__main__':
         all_cun += 1
         if pre_label[i] == label_list[i]:
                 cun += 1
-    '''for i in range(len(pre_label)):
-        for j in range(len(pre_label[i])):
-            all_cun += 1
-            if pre_label[i][j] == label_list[i]:
-                cun += 1'''
     print cun, all_cun, cun / all_cun
