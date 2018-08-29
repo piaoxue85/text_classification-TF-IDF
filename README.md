@@ -1,4 +1,4 @@
-# text_classification-
+# text_classification-TF-IDF
 # 金融名词解释分类，TF-IDF + SVM
 
 运行 TF-IDF.py 生成summary_tdm.dat 和 summary_vocabulary.dat
